@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
 
 /* Mobile First */
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+  width: 100%;
 }
+
 h1 {
   font-size: 35pt;
   font-weight: 900;
+  font-family: "Bevan", cursive;
 }
 
 h2 {
   font-size: 20pt;
   font-weight: 900;
   padding-top: 2%;
+  font-family: "Bevan", cursive;
 }
 
 p {
@@ -22,47 +28,63 @@ p {
 
 ul {
   font-weight: 600;
-  padding: 2% 5% 2% 5%;
+  padding: 15px 15px 15px 15px;
+  font-family: "Bevan", cursive;
+  list-style: none;
 }
 
 ul li {
   font-size: 14pt;
   line-height: 2;
+  padding-left: 10%;
+}
+
+ul a {
+  color: white;
+  text-decoration: line;
+}
+
+a:hover {
+  color: #fd8465;
 }
 
 /* Start blocks */
 
 header {
-  background-color: #55fac7;
+  background-color: #c15034;
   text-align: center;
-  padding: 1px;
+  padding: 15px;
+  color: white;
+  background-image: url("assets/hiphop_pattern.png"), url("paper.gif");
 }
 
 nav {
-  background-color: #c7c7cc;
+  background-color: #2f2f2f;
+  color: white;
 }
 
 main {
   background-color: #efeff4;
-  padding: 0% 5% 2% 5%;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 aside {
   background-color: #585858;
   color: white;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 footer {
   background-color: #1a1818;
-  color: white;
-  text-align: center;
-
-  float: left;
-  position: fixed;
-  width: 100%;
+  right: 0;
   bottom: 0;
+  left: 0;
+  color: #efeff4;
+  text-align: center;
+  font-family: "Bevan", cursive;
 }
 
 footer p {
@@ -72,27 +94,25 @@ footer p {
 /* Medium Screens */
 
 @media (min-width: 780px) {
-  .column {
-    margin: 1%;
-  }
-
   nav {
-    width: 20%;
+    width: 25%;
     float: left;
-    padding-left: 5%;
+    height: 256px;
   }
 
   main {
-    width: 40%;
+    width: 46%;
     float: left;
   }
 
   aside {
     width: 25%;
     float: left;
+    height: 256px;
   }
 
   footer {
     float: left;
+    width: 100%;
   }
 }

@@ -1,34 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
 
-h1 {
+/* Mobile First */
+
+body {
   font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+}
+
+h1 {
+  font-size: 35pt;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight: 900;
+  padding-top: 2%;
 }
 
 p {
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 14pt;
+  max-width: 720px;
 }
 
+ul {
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 15px 15px 15px 15px;
+  list-style-type: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #53ffc6;
+}
 header {
-  background-color: burlywood;
-  text-align: center;
+  background-color: #faf0df;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
 }
 
 nav {
-  background-color: aquamarine;
-  text-align: center;
+  background-color: #5b8e7d;
+  color: white;
+  text-align: left;
+  margin-bottom: 1%;
 }
 
 main {
-  background-color: cornflowerblue;
-  text-align: center;
+  background-color: #2d2e2e;
+  color: white;
+  text-align: left;
+  padding: 5%;
+  margin-bottom: 1%;
 }
 
 aside {
-  background-color: darkgoldenrod;
+  margin-bottom: 1%;
+  background-color: #faf0df;
+  padding: 20px;
   text-align: center;
 }
 
 footer {
-  background-color: gold;
+  background-color: #bc4b51;
+  color: white;
   text-align: center;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 0px 20px 0px;
+}
+
+footer p {
+  font-size: small;
+}
+
+/* Medium Screens */
+
+@media (min-width: 780px) {
+  .column {
+    margin: 1%;
+  }
+
+  .flexbox {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  nav {
+    width: 25%;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  .hodorimg {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  aside {
+    background-color: #5b8e7d;
+    width: 25%;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
